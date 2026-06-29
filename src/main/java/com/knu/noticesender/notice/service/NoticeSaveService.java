@@ -90,7 +90,7 @@ public class NoticeSaveService {
 
     private Notice updateAndGetNotice(NoticeSaveReqDto dto) {
         Notice notice = noticeRepository.findByNum(dto.getNum()).orElseThrow(RuntimeException::new);
-        notice.setUpdatedData(dto.getTitle(), dto.getContent(), dto.getCategory(),dto.getLink());
+        notice.setUpdatedData(dto.getTitle(), dto.getContent(), dto.getCategory());
         return notice;
     }
 }

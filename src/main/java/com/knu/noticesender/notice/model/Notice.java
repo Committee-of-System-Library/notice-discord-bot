@@ -85,11 +85,10 @@ public class Notice {
      * 공지 내용을 업데이트하고 상태를 UPDATE로 변경
      * <p>기존 공지와 비교 후 변경이 감지되었을 때 호출
      */
-    public void setUpdatedData(String title, String content, Category category, String link) {
+    public void setUpdatedData(String title, String content, Category category) {
         this.title = title;
         this.content = content;
         this.category = category;
-        this.link= link;
         this.type = NoticeType.UPDATE;
     }
 
