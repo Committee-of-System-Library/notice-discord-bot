@@ -78,7 +78,6 @@ public class NoticeSaveReqDto {
     public boolean isDifferentWith(Notice notice) {
         return !Objects.equals(notice.getTitle(), this.title)
                 || !Objects.equals(notice.getCategory(), this.category)
-                || !Objects.equals(notice.getLink(), this.link)
                 || !Objects.equals(notice.getContent(), this.content);
     }
 }
